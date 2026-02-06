@@ -5,7 +5,7 @@
                               "protocol": "vless",
                               "settings": {
                                             "clients": [
-                                                            { "id": "11111111-1111-1111-1111-111111111111" }
+                                                            { "id": "51070c69-e808-48c7-9d9e-1d91a665c2ce" }
                                             ],
                                             "decryption": "none"
                               },
@@ -17,3 +17,4 @@
         ],
         "outbounds": [{ "protocol": "freedom" }]
 }
+

@@ -1,27 +1,28 @@
 {
-  "inbounds": [
-    {
-      "port": 8080,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
+    "inbounds": [
           {
-            "id": "11111111-1111-1111-1111-111111111111"
+                  "port": 443,
+                  "protocol": "vless",
+                  "settings": {
+                            "clients": [
+                                        {
+                                                      "id": "11111111-1111-1111-1111-111111111111"
+                                        }
+                            ],
+                            "decryption": "none"
+                  },
+                  "streamSettings": {
+                            "network": "ws",
+                            "security": "none",
+                            "wsSettings": {
+                                        "path": "/vpn"
+                            }
+                  }
           }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/vpn"
-        }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    }
-  ]
+    ],
+    "outbounds": [
+          {
+                  "protocol": "freedom"
+          }
+    ]
 }
